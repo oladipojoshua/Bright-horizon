@@ -40,9 +40,9 @@ body{
 
 .bright{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2;
-    padding: 10px;
+    padding: 2px;
     width: 150px;
     text-align: center;
     background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
