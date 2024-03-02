@@ -14,7 +14,7 @@ body{
 .container{
     position: relative;
         height: 600px;
-        background-image: url(https://img.freepik.com/free-photo/customer-experience-creative-collage_23-2149371200.jpg?w=740&t=st=1709394910~exp=1709395510~hmac=d6ef71abf9e1381d27bd0d11495132e9d1edbf2a1a14d191bd3db7edcf3d3655);
+        background-image: url(https://images.pexels.com/photos/5212325/pexels-photo-5212325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center;
@@ -28,7 +28,7 @@ body{
     right: 0;
     bottom: 0;
     opacity: .5;
-    background: linear-gradient(135deg, #ce4be8 40%, #207ce5 50%);
+    background: linear-gradient(135deg, #ce4be8 40%, #207ce5 50% );
 }
 
 

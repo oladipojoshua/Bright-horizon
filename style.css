@@ -34,8 +34,8 @@ body{
 /* <!-- the nav-bar --> */
 .navCountainer{
     display: flex;
-    width: 960px;
     height: 80px;
+    gap: 15px;
 }
 
 .bright{
@@ -47,4 +47,29 @@ body{
     text-align: center;
     background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
     color: white;
+}
+
+.nav-item{
+    /* background-color: #f048bb; */
+    width: 920px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 25px;
+    z-index: 1;
+}
+
+.nav-item>ul{
+    display: flex;
+    gap: 39px;
+    list-style-type: none;
+    float: right;
+}
+
+li>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item>ul>li>a.active:hover {
+    color: blue !important; /* link color when active and hovered */
 }

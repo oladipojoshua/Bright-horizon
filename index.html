@@ -16,8 +16,35 @@
 
         <div class="navCountainer">
             <div class="bright">Bright Horizons</div>
-            <div></div>
+            <div class="nav-item">
+                <ul>
+                    <li><a href="index.html" class="">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="Instructor.html">Instructor</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="coutact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+
+
+    <script>
+        // Get the current page URL
+        var currentPage = window.location.href;
+    
+        // Get all the links in the navigation
+        var links = document.querySelectorAll('.nav-item ul li a');
+    
+        // Loop through each link
+        links.forEach(function(link) {
+            // Check if the link's href matches the current page URL
+            if (link.href === currentPage) {
+                // Add the 'active' class to the link
+                link.classList.add('active');
+            }
+        });
+    </script>
 </body>
 </html>
