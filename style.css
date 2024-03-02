@@ -5,7 +5,19 @@
 }
 
 .container{
-    background-image: url(https://preview.colorlib.com/theme/studylab/images/bg_1.jpg);
-    height: 600px;
-    
+        height: 639px;
+        background-image: url(https://preview.colorlib.com/theme/studylab/images/bg_1.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+    background: linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #f048bb 100%);
 }
