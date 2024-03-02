@@ -1,0 +1,11 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url(https://preview.colorlib.com/theme/studylab/images/bg_1.jpg);
+    height: 600px;
+    
+}
