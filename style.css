@@ -20,6 +20,7 @@ body{
         padding: 0px 120px 0px 120px;
 }
 
+
 .overlay {
     position: absolute;
     top: 0;
@@ -72,4 +73,11 @@ li>a{
 
 .nav-item>ul>li>a.active:hover {
     color: blue !important; /* link color when active and hovered */
+}
+
+
+.homecont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px
 }
