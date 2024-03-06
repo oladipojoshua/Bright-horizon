@@ -13,14 +13,12 @@ body {
 
 /* backgroung pics and the gradiant */
 .container {
-    height: 639px;
     padding-top: 100px;
     background-image: linear-gradient(45deg, rgba(32, 124, 229, 0) 0%, rgba(146, 95, 206, 0) 55%, #e08ac5 100%), url(https://preview.colorlib.com/theme/studylab/images/bg_1.jpg);
     background-size: cover, cover;
     /* Adjust the size of both backgrounds */
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
-    padding: 0px 120px 0px 120px;
     background-attachment: fixed;
 }
 
@@ -29,11 +27,8 @@ body {
     display: flex;
     height: 80px;
     gap: 15px;
-    transition: height 0.3s ease;
-}
+    padding: 0px 120px 0px 120px;
 
-.navCountainer.scrolled {
-    height: 20px; /* Adjust height when scrolled */
 }
 
 .bright {
@@ -68,9 +63,57 @@ li>a {
     color: #fff;
 }
 
-.nav-item>ul>li>a.active:hover {
+#navbar.nav-item>ul>li>a.active:hover {
     color: blue !important;
     /* link color when active and hovered */
+}
+
+
+
+ /* rhe dropdown nav-bar */
+ #navbar {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#navbar.fixed {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    color: black;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar.navbar-scrolled {
+    transition: top 1s ease-in-out; /* Add transition effect */
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+#navbar.navbar-scrolled ul li a {
+    transition: top 1s ease-in-out; /* Add transition effect */
+    color: black;
+}
+
+#navbar.navbar-scrolled .bright {
+    font-weight: 700;
+    font-size: 19px;
+    line-height:18px ; 
+}
+
+#navbar nav ul {
+    display: flex;
+    gap: 39px;
+    list-style-type: none;
+    float: right;
+}
+
+#navbar.navbar-scrolled nav ul li a.active {
+    color: blue !important; /* link color when active and hovered */
 }
 
 
@@ -81,7 +124,9 @@ li>a {
 .homecont {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px
+    gap: 10px;
+    padding: 0px 120px 0px 120px;
+
 }
 
 .homecontsub1 {
@@ -158,13 +203,14 @@ li>a {
     background-color: #ffffff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .reg {
     padding: 50px;
 }
 
-.homecontsub2>h3 {
+.homecontsub2 .reg h3 {
     color: #4986FC;
     font-weight: 500;
     font-size: 20px;
@@ -224,8 +270,17 @@ li>a {
     outline: none;
 }
 
+.cont {
+    margin-top: -20px;
+    height: 23vh;
+    width: 100%;
+    background-color: rgba(179, 178, 178, 0.22);
+    border-radius: 55% 0px 0px 0px;
+    z-index: 5;
+}
+
 .paper {
-    padding-top: 15px;
+    padding-top: 10px;
     position: relative;
     top: -30px;
     right: 50px;
@@ -242,15 +297,9 @@ li>a {
 
 }
 
-.cont {
-    height: 20vh;
-    width: 100%;
-    background-color: rgba(179, 178, 178, 0.22);
-    border-radius: 70% 0px 0px 0px;
-}
 .cont>p{
     position: relative;
-    top: 60px;
+    top: 50px;
     left: 80px;
     font-weight: 400;
     color: #999999;
@@ -259,4 +308,45 @@ li>a {
 .cont>p>a{
 text-decoration: none;
 color: #4986FC;
+}
+
+
+
+/* firstWhitePart */
+
+.firstWhitePart{
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    padding: 150px 120px 120px 150px;
+    margin-top: -40px;
+}
+
+.firstWhitePart p{
+    color: #4986FC;
+    font-size: 13px;
+    line-height: 23.4px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.firstWhitePart h2{
+    color: RGBA(0, 0, 0, 0.8);
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 47.6px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.courseContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.coursePics>img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
 }
