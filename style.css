@@ -522,3 +522,74 @@ color: #4986FC;
     color: #4986FC;
     font-weight: 600;
 }
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    padding: 120px;
+    gap: 50px;
+    /* height: 110vh; */
+}
+
+
+.piss1{
+    box-shadow: 0px 2px 25px -13px rgba(0, 0, 0, 0.26);
+    border: 15px solid #fff;
+    width: 70%;
+}
+
+.piss2{
+    box-shadow: 0px 2px 25px -13px rgba(0, 0, 0, 0.26);
+    border: 15px solid #fff;
+    width: 60%;
+    height: 300px;
+    margin-top: -230px;
+    margin-left: 220px;
+}
+
+.skillBoxs2{
+    padding-top:30px ;
+}
+
+.skillBoxs2 span{
+    color: #4986FC;
+    font-size: 13px;
+    line-height: 23.4px;
+    font-weight: 600;
+}
+
+.skillBoxs2 h2{
+    color: #000000;
+    font-size: 34px;
+    line-height: 47.6px;
+    font-weight: 600;
+}
+.skillBoxs2 p{
+    color: 
+    #999999;
+    font-size: 16px;
+    line-height: 28.8px;
+    font-weight: 400;
+    padding: 0px 11.97px 0px 0px;
+}
+
+.skillbutt{
+    margin-top: 20px;
+}
+
+.skillbutt .skillCourse{
+    background-color: #4986FC;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 24px;
+    text-align: center;
+}
