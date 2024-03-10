@@ -598,3 +598,52 @@ color: #4986FC;
 
 
 /* TESTIMONIAL */
+
+.testimonial{
+    background-color: #F9FAFF;
+    height: 150vh;
+}
+
+.testimonialgird{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.testimonialgird1{
+    padding: 120px;
+}
+
+.testimonialgird1 p{
+    color: #4986FC;
+    font-size: 13px;
+    line-height: 23.4px;
+    font-weight: 600;
+}
+.testimonialgird h2{
+    color: RGBA(0, 0, 0, 0.8);
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 47.6px;
+}
+
+.testimonialgird2 img{
+    width: 100%;
+    height: 180%;
+}
+
+.testimonialcontain{
+    position: relative;
+    top: -120px;
+    padding: 0px 20px 0px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.testimonialboxes{
+    border: 2px solid red;
+    height: 50vh;
+    width: 300px;
+}
+
+
